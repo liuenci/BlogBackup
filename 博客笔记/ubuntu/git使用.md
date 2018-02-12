@@ -8,6 +8,7 @@
 git --version
 ```
 记住一定是--,不是一个-。
+
 2. 获取ssh密钥
 ```
 ssh-keygen -C "你的github邮箱" -f ~/.ssh/github
@@ -20,11 +21,13 @@ cd .ssh
 sudo gedit github.pub
 ```
 这个时候会打开这个文件，只需要复制里面的代码到github里面的SSH and GPG keys 里面填写一下就好了。
+
 3. 创建本地项目文件
 这个文件就是专门负责项目的上传和更新，进入这个文件夹，然后在终端输入以下代码
 ```
 git clone "你的github仓库地址"
 ```
+
 4. 提交文件夹到github上
 ```
 git add . // 更新整个目录
