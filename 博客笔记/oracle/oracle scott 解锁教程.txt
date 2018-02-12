@@ -1,0 +1,22 @@
+---
+date: 2017-10-12 10:09
+status: public
+title: 'oracle scott 解锁教程'
+---
+
+1.打开 sqlplus
+2.输入 
+```oracle
+sys as sysdba;
+```
+3.不用口令直接回车
+4.输入
+```oracle
+alter user scott account unlock;
+```
+5.改密码：输入 
+```oracle
+alter user scott identified by tiger;
+```
+可以把tiger换成自己想要的密码。
+

@@ -1,0 +1,37 @@
+---
+date: 2017-10-12 10:25
+status: public
+title: 'sql plus登录几种账户方法'
+---
+
+> 登录scott账户分开输入
+```oracle 
+conn scott/tiger
+```
+```oracle
+show user
+```
+> 登录sysdba账户输入
+```oracle
+sys as sysdba;
+```
+不用口令直接回车
+> 在网页中登录企业管理器
+
+在网页中输入https://localhost:5500/em 进入企业管理器
+用户名输入 ：sys
+新装的oracle如果没有改过sys的密码需要先登录sys，然后输入
+```oracle
+alter user sys identified by tiger;
+```
+tiger可以换成你想要的密码
+最后在企业管理器登录界面输入你改过的密码。
+> 使用system账户登录oracle
+
+用户名是:system
+密码是scott账户设置的密码，如果你的密码不是的话，可以用sys登录oracle再输入
+```oracle
+alter user system identified by tiger;
+```
+tiger可以换成你想要的密码。
+最后登录.
