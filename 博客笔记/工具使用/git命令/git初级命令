@@ -130,3 +130,7 @@ git rebase dev
 ```
 git stash
 ```
+32. 将暂存区中的内容拿出来
+```
+git stash pop
+```
