@@ -102,3 +102,19 @@ rmdir 就是 remove directory 的意思，但是这个命令只能删除文件�
 ```
 rmdir folder3
 ```
+##### rm 移除文件
+移除单个文件
+```
+rm file1
+```
+有提示的移除文件
+-i 每个要移除的文件都进行提示
+-I 超过三个要移除的文件才进行提示
+```
+rm -i file1 file2 file3
+rm -I file*
+```
+删除非空文件夹,加上 -r 或者 -R
+```
+rm -r folder1 
+```
