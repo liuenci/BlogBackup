@@ -41,3 +41,64 @@ ls -lh
 ```
 ls --help
 ```
+##### touch 创建文件
+创建一个文件
+```
+touch file1
+```
+创建多个文件
+```
+touch file1 file2 file3 file4 file5
+```
+##### cp 复制文件或者文件夹
+将老文件复制到新文件
+```
+cp file1 file1copy
+```
+如果file1copy已经存在，上面的语句会直接覆盖原来的file1copy,为了避免覆盖，需要在cp后面加一个选项。回复任意大小写的'y'或者'yes'就确认复制，直接回车或者输入其他字母会取消复制，
+```
+cp -i file1 file1copy
+```
+复制进文件夹
+```
+cp file1 folder1/
+```
+复制文件夹，需要加上 -R (recursive)
+```
+cp -R folder1/ folder2/
+```
+复制文件名称部分相同的文件
+```
+cp file* folder2/
+```
+复制单独的几个文件到另外一个文件夹
+```
+cp file1 file1copy file2 folder1/
+```
+#####　mv 移动文件
+移动一个文件到另外一个文件夹
+```
+mv file6 folder1/
+```
+移动文件到原来的地点，但是以不同的名字，就是重命名
+```
+mv file1 file1rename
+```
+找到更多的 mv 的操作
+```
+mv --help
+```
+##### mkdir 创建文件夹
+在当前目录添加一个文件夹
+```
+mkdir folder3
+```
+在文件夹中建一个文件
+```
+mkdir folder3/file1
+```
+##### rmdir 移除文件夹
+rmdir 就是 remove directory 的意思，但是这个命令只能删除文件夹内没有文件的文件夹。也就是说只能移除空文件夹。
+```
+rmdir folder3
+```
