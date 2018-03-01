@@ -116,5 +116,28 @@ rm -I file*
 ```
 删除非空文件夹,加上 -r 或者 -R
 ```
-rm -r folder1 
+rm -r folder1
+```
+##### nano 编辑脚本
+打开一个python脚本进行编辑,编辑完之后 ctrl+x 保存，再通过 python 指令运行
+```
+nano file.py
+python file.py
+```
+##### cat 查看脚本内容,或者将脚本中的内容写进另外一个脚本中
+查看 python 脚本内容
+```
+cat file.py
+```
+将文件的内容写进另外一个文件，另外一个文件不存在时会自动创建
+```
+cat file.py > file2.py
+```
+将多个文件写进另外一个文件，另外一个文件不存在时会自动创建,内容顺序为 file1 file2 file3
+```
+cat file1.py file2.py > file3.py
+```
+将一个文件写入到另外一个文件的末尾
+```
+cat file1.py >> file2.py
 ```
