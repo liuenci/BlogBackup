@@ -82,7 +82,6 @@ git reflog
 19. 单个文件的版本回退
 ```
 git checkout
-```
 git checkout 7757af1 -- 1.py
 ```
 20. 使用图形的方式打印日志，一般用于多分支的情况
