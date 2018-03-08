@@ -133,3 +133,7 @@ git stash
 ```
 git stash pop
 ```
+33. 忽略windows和unix换行符
+```
+git config --global core.autocrlf false
+```
