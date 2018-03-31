@@ -1,0 +1,5 @@
+前段时间用eclipse的时候写的一个项目，上传到github上之后用idea克隆下来之后发现不能运行，在右键找不到run的地方是因为我们没有设置他的模块。
+
+首先设置一下我们的src目录，在项目名上右键选择Open Module Setting,然后选择左边的Modules,在右边选择sources下的src,单击一下再选择Marks as 那一行的sources,然后发现src变成绿色即可。
+
+然后设置out目录，回到工程界面，如果项目里面本身没有out目录，先新建一个，然后选择Open Module Settings ，打开界面之后选择project，在右边有个Project compiler output,找到刚刚新建的out目录即可。
