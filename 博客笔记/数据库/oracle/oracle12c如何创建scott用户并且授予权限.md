@@ -20,7 +20,7 @@ grant connect,resource,unlimited tablespace to scott;
 ```
 如果创建容器数据库可以使用下面这行语句
 ```
-grant connect,resource.unlimited tablespace to scott container=all;
+grant connect,resource,unlimited tablespace to scott container=all;
 ```
 ##### 设置用户使用的表空间
 ```
